@@ -1,16 +1,17 @@
 #!/usr/bin/env bash
-#loop 10 iterations and three especific conditionals
-i="0"
-while [ $i -lt 10 ]
+# using while loop wear 4 and 8 are replced
+
+declare -i idx=0
+while (( idx < 10 ))
 do
-	if ((i == 3))
-	then
-		echo "bad luck"
-	elif ((i == 7))
-	then 
-		echo "good luck"
-	else
-		echo "Best School"
-	fi
-	((i++))
+    if ((idx == 3))
+    then 
+	echo "bad luck"
+    elif ((idx == 7))
+    then 
+	echo "good luck"
+    else
+	echo "Holberton School"
+    fi
+      ((idx++))
 done
